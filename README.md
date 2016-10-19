@@ -31,3 +31,15 @@ console.log(arr.typeis('array')); //true;
 console.log(now.typeis()); //Date;
 console.log(obj.typeis()); //Object;
 ```
+
+####Real world Usage
+
+```javascript 
+function realWorld( options ){
+    if(options.typeis('object')){
+        //do something
+    } else {
+        //do another something
+    }
+}
+```
