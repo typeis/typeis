@@ -4,7 +4,7 @@
   "description": "Typeis. it's the smart and simple javaScript type checker",
   "main": "typeis.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node node_modules/uglify-js/bin/uglifyjs typeis.js -o dist/typeis.min.js -c -m"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/typeis/typeisjs/issues"
   },
-  "homepage": "https://github.com/typeis/typeisjs#readme"
+  "homepage": "https://github.com/typeis/typeisjs#readme",
+  "dependencies": {
+    "uglify-js": "^2.7.3"
+  }
 }
