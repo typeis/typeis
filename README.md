@@ -2,10 +2,14 @@
 ##Typeis. it's the smart and simple javaScript type checker;
 
 ###installation
+####npm
 ```javascript
-npm install typeis --save
+npm install typeis
 ```
-
+####bower
+```javascript
+bower install typeis
+```
 ###usage
 
 ####nodejs

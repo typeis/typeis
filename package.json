@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/typeis/typeisjs/issues"
   },
-  "homepage": "https://github.com/typeis/typeisjs#readme",
+  "homepage": "https://typeis.github.io",
   "dependencies": {
     "uglify-js": "^2.7.3"
   }

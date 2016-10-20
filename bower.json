@@ -1,0 +1,35 @@
+{
+  "name": "typeis",
+  "description": "Typeis. it's the smart and simple javaScript type checker",
+  "main": "typeis.js",
+  "authors": [
+    "salihsagdilek"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "typeis",
+    "type",
+    "is",
+    "type",
+    "check",
+    "type",
+    "checker",
+    "javascript",
+    "type",
+    "checker",
+    "smart",
+    "type",
+    "check",
+    "typeof",
+    "type",
+    "of"
+  ],
+  "homepage": "https://typeis.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
