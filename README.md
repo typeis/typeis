@@ -1,3 +1,5 @@
+<p align="center"><a href="https://typeis.github.io/" target="_blank"><img width="200"src="https://typeis.github.io/typeis.png"></a></p>
+
 #typeis.js
 ##Typeis. it's the smart and simple javaScript type checker;
 

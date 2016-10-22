@@ -1,6 +1,6 @@
 {
   "name": "typeis",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Typeis. it's the smart and simple javaScript type checker",
   "main": "typeis.js",
   "scripts": {

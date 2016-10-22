@@ -1,3 +1,11 @@
+/**
+ * typeis.js
+ * Typeis. it's the smart and simple javaScript type checker
+ *
+ * @author Salih sagdilek
+ * @version 1.0.3
+ */
+
 ;(function () {
     var OP = Object.prototype;
     if (Object.defineProperty && !OP.typeis) {
