@@ -1,6 +1,6 @@
 {
   "name": "typeis",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Typeis. it's the smart and simple javaScript type checker",
   "main": "typeis.js",
   "scripts": {
@@ -26,12 +26,12 @@
     "of"
   ],
   "author": "salihsagdilek",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/typeis/typeisjs/issues"
   },
   "homepage": "https://typeis.github.io",
-  "dependencies": {
+  "devDependencies": {
     "uglify-js": "^2.7.3"
   }
 }

@@ -3,7 +3,7 @@
  * Typeis. it's the smart and simple javaScript type checker
  *
  * @author Salih sagdilek
- * @version 1.0.3
+ * @version 1.0.4
  */
 
 ;(function () {
