@@ -32,7 +32,7 @@ var obj = {};
 console.log(regexp.typeis()); //RegExp;
 console.log(regexp.typeis('regexp')); //true;
 console.log(regexp.typeis('object')); //false;
-console.log(arr.typeis()); //RegExp;
+console.log(arr.typeis()); //Array;
 console.log(arr.typeis('array')); //true;
 console.log(now.typeis()); //Date;
 console.log(obj.typeis()); //Object;
