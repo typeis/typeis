@@ -6,16 +6,17 @@
  * @version 1.0.4
  */
 
-;(function () {
-    var OP = Object.prototype;
+;((() => {
+    const OP = Object.prototype;
     if (Object.defineProperty && !OP.typeis) {
-        var toString, Regex;
+        let toString;
+        let Regex;
         toString = OP.toString;
         Regex = /^\[object |]$/gi;
-        Object.defineProperty(OP, 'typeis', {value: function (is) {return typeis(this, is)}});
+        Object.defineProperty(OP, 'typeis', {value(is) {return typeis(this, is)}});
         function typeis(something, is) {
-            var type = toString.call(something).replace(Regex, '');
+            const type = toString.call(something).replace(Regex, '');
             return is ? type.toLowerCase() === is.toLowerCase() : type;
         }
     }
-})();
+}))();
