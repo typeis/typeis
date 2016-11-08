@@ -15,7 +15,7 @@
         Object.defineProperty(OP, 'typeis', {value: function (is) {return typeis(this, is)}});
         function typeis(something, is) {
             var type = toString.call(something).replace(Regex, '');
-            return is ? new RegExp(is, 'i').test(type) : type;
+            return is ? new RegExp('^(' + is + ')$', 'i').test(type)
         }
     }
 })();
