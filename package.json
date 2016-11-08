@@ -1,6 +1,6 @@
 {
   "name": "typeis",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Typeis. it's the smart and simple javaScript type checker",
   "main": "typeis.js",
   "scripts": {
@@ -12,18 +12,13 @@
   },
   "keywords": [
     "typeis",
-    "type",
-    "is",
-    "type",
-    "check",
+    "type is",
+    "type check",
     "type checker",
     "javascript type checker",
-    "smart",
-    "type",
-    "check",
+    "smart type check",
     "typeof",
-    "type",
-    "of"
+    "type of"
   ],
   "author": "salihsagdilek",
   "license": "MIT",
