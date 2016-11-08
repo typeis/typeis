@@ -3,24 +3,24 @@
 #typeis.js
 ##Typeis. it's the smart and simple javaScript type checker;
 
+
+###Download
+
+* [typeis.js](https://raw.githubusercontent.com/typeis/typeisjs/master/typeis.js) ([minified](https://raw.githubusercontent.com/typeis/typeisjs/master/dist/typeis.min.js))
+
 ###installation
-####npm
 ```javascript
 npm install typeis
-```
-####bower
-```javascript
 bower install typeis
 ```
 ###usage
-
-####nodejs
+In Node.js:
 ```javascript
 require('typeis');
 ```
-####browser
+In a browser:
 ```html
-<script src="node_modules/typeis/typeis.js"></script>
+<script src="typeis.js"></script>
 ```
 ####examples
 ```javascript
