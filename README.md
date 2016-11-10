@@ -4,7 +4,7 @@ In Javascript, "Everything is (or acts like) an Object";
 Bunun bize sağladığı kolaylıklar zorluklar bir tarafa, karşımıza çıkan bir sorundan dolayı typeis.js'i yazma gereği duyduk "tip kontrolü (type check)".
 
 #typeis.js
-##Typeis. it's the smart and simple javaScript type checker;
+##Typeis. it's the smart and simple javaScript type checker ~226 Bytes;
 
 |Value                  |Native     |Typeis.js  |
 |---                    |---        |---        |
@@ -25,7 +25,8 @@ Typeis.js acts like an property; doesn't work null and undefined types because t
 
 ###Download
 
-* [typeis.js ~813 B (413 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/typeis.js) ([minified ~305 B (226 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/dist/typeis.min.js))
+* [typeis.js ~813 B (413 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/typeis.js)
+* [typeis.min.js ~305 B (226 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/dist/typeis.min.js)
 
 ###installation
 ```javascript
