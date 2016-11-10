@@ -25,7 +25,7 @@ Typeis.js acts like an property; doesn't work null and undefined types because t
 
 ###Download
 
-* [typeis.js ~1.2 KB](https://raw.githubusercontent.com/typeis/typeisjs/master/typeis.js) ([minified ~400 B](https://raw.githubusercontent.com/typeis/typeisjs/master/dist/typeis.min.js))
+* [typeis.js ~813 B (413 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/typeis.js) ([minified ~305 B (226 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/dist/typeis.min.js))
 
 ###installation
 ```javascript
