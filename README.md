@@ -1,7 +1,7 @@
 <p align="center"><a href="https://typeis.github.io/" target="_blank"><img width="200"src="https://typeis.github.io/typeis.png"></a></p>
 
-In Javascript, "Everything is (or acts like) an Object";
-Bunun bize sağladığı kolaylıklar zorluklar bir tarafa, karşımıza çıkan bir sorundan dolayı typeis.js'i yazma gereği duyduk "tip kontrolü (type check)".
+In Javascript, "Everything is (or acts like) an Object"
+We need to write "typeis.js" due to a problem (type check) arised other than except the conveniences it is a providing to us.
 
 #typeis.js
 ##Typeis. it's the smart and simple javaScript type checker ~226 Bytes;
@@ -43,30 +43,26 @@ In a browser:
 <script src="typeis.js"></script>
 ```
 ####examples
-Multi type checking
+Basic Type checking
 ```javascript
-variable.typeis(['array', 'object']); // if variable is Array or Object return true otherwise false
+variable.typeis();
+// return Array, Object, RegExp, Date etc.
+```
+Multi type validation
+```javascript
+variable.typeis(['array', 'object']);
+// if variable is Array or Object return true otherwise false
 ```
 type checking with regex
 ```javascript
-variable.typeis('array|object'); // if variable is Array or object return true otherwise false
-variable.typeis('.+[yep]$'); // if variable is Array, Date, RegExp return true otherwise false
-variable.typeis('(^(?!array|object).+)[^n]$'); // if variable is Array, Object, Function and Boolean return false otherwise true
-```
+variable.typeis('array|object');
+// if variable is Array or object return true otherwise false
 
-```javascript
-var regexp = /test/gi
-var arr = ['test'];
-var now = new Date();
-var obj = {};
+variable.typeis('.+[yep]$');
+// if variable type end of "y", "e" and "p" like Array, Date, RegExp return true otherwise false
 
-console.log(regexp.typeis()); //RegExp;
-console.log(regexp.typeis('regexp')); //true;
-console.log(regexp.typeis('object')); //false;
-console.log(arr.typeis()); //Array;
-console.log(arr.typeis('array')); //true;
-console.log(now.typeis()); //Date;
-console.log(obj.typeis()); //Object;
+variable.typeis('(^(?!array|object).+)[^n]$');
+// if variable is Array, Object or ending "n" like Function and Boolean return false otherwise true
 ```
 
 ####Real world Usage
@@ -81,17 +77,8 @@ function realWorld( options ){
 }
 ```
 
-if you don't sure a 100 percent you need to change like
-
-```javascript 
-function realWorld( options ){
-    if(options && options.typeis('object')){
-        //do something
-    } else {
-        //do another something
-    }
-}
-```
+####Browser Support
+IE9 and below also support all modern browser.
 
 ####Changelog
 #####1.0.x

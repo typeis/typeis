@@ -8,21 +8,13 @@
   "license": "ISC",
   "keywords": [
     "typeis",
-    "type",
-    "is",
-    "type",
-    "check",
-    "type",
-    "checker",
-    "javascript",
-    "type",
-    "checker",
-    "smart",
-    "type",
-    "check",
+    "type is",
+    "type check",
+    "type checker",
+    "javascript type checker",
+    "smart type check",
     "typeof",
-    "type",
-    "of"
+    "type of"
   ],
   "homepage": "https://typeis.github.io",
   "ignore": [
