@@ -1,6 +1,6 @@
 {
   "name": "typeis",
-  "description": "Typeis. it's the smart and simple javaScript type checker",
+  "description": "Typeis. it's the smart and simple javascript type check and validation library",
   "main": "typeis.js",
   "authors": [
     "salihsagdilek"
@@ -11,6 +11,7 @@
     "type is",
     "type check",
     "type checker",
+    "type validation",
     "javascript type checker",
     "smart type check",
     "typeof",

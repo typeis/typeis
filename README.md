@@ -4,7 +4,7 @@ In Javascript, "Everything is (or acts like) an Object"
 We need to write "typeis.js" due to a problem (type check) arised other than except the conveniences it is a providing to us.
 
 #typeis.js
-##Typeis. it's the smart and simple javaScript type checker ~226 Bytes;
+##Typeis. it's the smart and simple javascript type check and validation library ~226 Bytes;
 
 |Value                  |Native     |Typeis.js  |
 |---                    |---        |---        |
@@ -43,7 +43,7 @@ In a browser:
 <script src="typeis.js"></script>
 ```
 ####examples
-Basic Type checking
+Basic type checking
 ```javascript
 variable.typeis();
 // return Array, Object, RegExp, Date etc.
@@ -53,7 +53,7 @@ Multi type validation
 variable.typeis(['array', 'object']);
 // if variable is Array or Object return true otherwise false
 ```
-type checking with regex
+Type valition with regex
 ```javascript
 variable.typeis('array|object');
 // if variable is Array or object return true otherwise false
@@ -85,11 +85,13 @@ IE9 and below also support all modern browser.
 Typeis.js Released
 
 #####1.1.x
-Multi type check support
+Multi type validation support
 ```javascript
-variable.typeis(['array', 'object']); // if variable is Array or Object return true otherwise false
+variable.typeis(['array', 'object']);
+// if variable is Array or Object return true otherwise false
 ```
-type checking with regex support
+type validation with regex support
 ```javascript
-variable.typeis('array|object'); // if variable is Array or object return true otherwise false
+variable.typeis('array|object');
+// if variable is Array or object return true otherwise false
 ```
