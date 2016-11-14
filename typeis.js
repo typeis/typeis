@@ -2,10 +2,10 @@
  * https://typeis.github.io/
  * https://github.com/typeis/typeisjs
  * typeis.js
- * Typeis. it's the smart and simple javaScript type checker
+ * Typeis. it's the smart and simple javascript type check and validation library
  *
  * @author Salih Sağdilek
- * @version 1.1.0
+ * @version 1.1.1
  */
 
 ;(function () {
