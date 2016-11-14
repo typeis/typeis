@@ -4,7 +4,7 @@ In Javascript, "Everything is (or acts like) an Object"
 We need to write "typeis.js" due to a problem (type check) arised other than except the conveniences it is a providing to us.
 
 #typeis.js
-##Typeis. it's the smart and simple javascript type check and validation library ~226 Bytes;
+###Typeis. it's the smart and simple javascript type check and validation library ~226 Bytes;
 
 |Value                  |Native     |Typeis.js  |
 |---                    |---        |---        |
