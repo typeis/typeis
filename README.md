@@ -28,12 +28,12 @@ Typeis.js acts like an property; doesn't work null and undefined types because t
 * [typeis.js ~813 B (413 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/typeis.js)
 * [typeis.min.js ~305 B (226 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/dist/typeis.min.js)
 
-### installation
+### Installation
 ```javascript
 npm install typeis
 bower install typeis
 ```
-### usage
+### Usage
 In Node.js:
 ```javascript
 require('typeis');
@@ -42,7 +42,7 @@ In a browser:
 ```html
 <script src="typeis.js"></script>
 ```
-#### examples
+#### Examples
 Basic type checking
 ```javascript
 variable.typeis();
