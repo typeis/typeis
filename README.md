@@ -23,17 +23,17 @@ We need to write "typeis.js" due to a problem (type check) arised other than exc
 Everything in JavaScript acts like an object, with the only two exceptions being **null** and **undefined**. *[JavaScript Garden](https://bonsaiden.github.io/JavaScript-Garden/#object.general)
 Typeis.js acts like an property; doesn't work null and undefined types because they doesn't have properties.
 
-###Download
+### Download
 
 * [typeis.js ~813 B (413 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/typeis.js)
 * [typeis.min.js ~305 B (226 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/dist/typeis.min.js)
 
-###installation
+### Installation
 ```javascript
 npm install typeis
 bower install typeis
 ```
-###usage
+### Usage
 In Node.js:
 ```javascript
 require('typeis');
@@ -42,7 +42,7 @@ In a browser:
 ```html
 <script src="typeis.js"></script>
 ```
-####examples
+#### Examples
 Basic type checking
 ```javascript
 variable.typeis();
@@ -65,7 +65,7 @@ variable.typeis('(^(?!array|object).+)[^n]$');
 // if variable is Array, Object or ending "n" like Function and Boolean return false otherwise true
 ```
 
-####Real world Usage
+#### Real world Usage
 
 ```javascript 
 function realWorld( options ){
@@ -77,14 +77,14 @@ function realWorld( options ){
 }
 ```
 
-####Browser Support
+#### Browser Support
 IE9 and below also support all modern browser.
 
-####Changelog
-#####1.0.x
+#### Changelog
+##### 1.0.x
 Typeis.js Released
 
-#####1.1.x
+##### 1.1.x
 Multi type validation support
 ```javascript
 variable.typeis(['array', 'object']);
