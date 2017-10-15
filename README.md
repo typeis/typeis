@@ -43,25 +43,31 @@ In a browser:
 <script src="typeis.js"></script>
 ```
 #### Examples
+
+<aside class="notice">
+Property usage will not available after ^2.0 anymore, please use function typeis(variable, [type])
 Basic type checking
+</aside>
+
+
 ```javascript
 variable.typeis();
 // return Array, Object, RegExp, Date etc.
 ```
 Multi type validation
 ```javascript
-variable.typeis(['array', 'object']);
+typeis(variable, ['array', 'object']);
 // if variable is Array or Object return true otherwise false
 ```
 Type valition with regex
 ```javascript
-variable.typeis('array|object');
+typeis(variable, 'array|object');
 // if variable is Array or object return true otherwise false
 
-variable.typeis('.+[yep]$');
+typeis(variable, '.+[yep]$');
 // if variable type end of "y", "e" and "p" like Array, Date, RegExp return true otherwise false
 
-variable.typeis('(^(?!array|object).+)[^n]$');
+typeis(variable, '(^(?!array|object).+)[^n]$');
 // if variable is Array, Object or ending "n" like Function and Boolean return false otherwise true
 ```
 
@@ -69,7 +75,7 @@ variable.typeis('(^(?!array|object).+)[^n]$');
 
 ```javascript 
 function realWorld( options ){
-    if(options.typeis('object')){
+    if(typeis(options, 'object')){
         //do something
     } else {
         //do another something
@@ -81,10 +87,14 @@ function realWorld( options ){
 IE9 and below also support all modern browser.
 
 #### Changelog
-##### 1.0.x
-Typeis.js Released
 
-##### 1.1.x
+##### 1.1.2
+Property usage warning
+
+##### 1.1.1
+Update readme
+
+##### 1.1.0
 Multi type validation support
 ```javascript
 variable.typeis(['array', 'object']);
@@ -95,3 +105,7 @@ type validation with regex support
 variable.typeis('array|object');
 // if variable is Array or object return true otherwise false
 ```
+
+##### 1.0
+Typeis.js Released
+
