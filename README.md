@@ -3,8 +3,9 @@
 In Javascript, "Everything is (or acts like) an Object"
 We need to write "typeis.js" due to a problem (type check) arised other than except the conveniences it is a providing to us.
 
-#typeis.js
-###Typeis. it's the smart and simple javascript type check and validation library ~226 Bytes;
+# typeis.js
+
+### Typeis. it's the smart and simple javascript type check and validation library ~226 Bytes;
 
 |Value                  |Native     |Typeis.js  |
 |---                    |---        |---        |
@@ -19,7 +20,8 @@ We need to write "typeis.js" due to a problem (type check) arised other than exc
 |Object                 |object     |Object     |
 |Date                   |object     |Date       |
 |RegExp                 |object     |RegExp     |
-####Be careful!
+
+#### Be careful!
 Everything in JavaScript acts like an object, with the only two exceptions being **null** and **undefined**. *[JavaScript Garden](https://bonsaiden.github.io/JavaScript-Garden/#object.general)
 Typeis.js acts like an property; doesn't work null and undefined types because they doesn't have properties.
 
