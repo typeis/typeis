@@ -5,7 +5,7 @@
  * Typeis. it's the smart and simple javascript type check and validation library
  *
  * @author Salih Sağdilek
- * @version 1.1.2
+ * @version 2.0.0
  */
 
 ;(function () {
