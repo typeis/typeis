@@ -10,27 +10,32 @@
 
 ;(function () {
   var OP = Object.prototype
-  if (Object.defineProperty && !OP.typeis) {
-    var toString, Regex
-    toString = OP.toString
-    Regex = /^\[object |]$/gi
-    Object.defineProperty(OP, 'typeis', {
-      value: function (is) {
-        console.warn('Property usage will not available after ^2.0 anymore, please use function typeis(variable, [type])')
-        return typeis(this, is)
-      }
-    })
+  var toString = OP.toString
+  var Regex = /^\[object |]$/gi
 
-    function whatTheType (something) {
-      return toString.call(something).replace(Regex, '')
+  function whatTheType (something) {
+    return toString.call(something).replace(Regex, '')
+  }
+
+  function typeis (something, is) {
+    var type = whatTheType(something, is)
+    if (whatTheType(is) == 'Array') {
+      is = is.join('|')
     }
+    return is ? new RegExp('^(' + is + ')$', 'i').test(type) : type
+  }
 
-    function typeis (something, is) {
-      var type = whatTheType(something, is)
-      if (whatTheType(is) == 'Array') {
-        is = is.join('|')
-      }
-      return is ? new RegExp('^(' + is + ')$', 'i').test(type) : type
+  if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+    module.exports = typeis
+  }
+  else {
+    if (typeof define === 'function' && define.amd) {
+      define([], function () {
+        return typeis
+      })
+    }
+    else {
+      window.typeis = typeis
     }
   }
 })()
