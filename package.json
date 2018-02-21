@@ -1,10 +1,11 @@
 {
   "name": "typeis",
-  "version": "1.1.2",
+  "version": "2.0.0-alpha",
   "description": "Typeis. it's the smart and simple javascript type check and validation library",
-  "main": "typeis.js",
+  "main": "dist/typeis.js",
   "scripts": {
-    "build": "node node_modules/uglify-js/bin/uglifyjs typeis.js -o dist/typeis.min.js -c -m"
+    "build": "webpack --config build/webpack.prod.js",
+    "watch": "webpack --watch --config build/webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,11 @@
   },
   "homepage": "https://typeis.github.io",
   "devDependencies": {
-    "uglify-js": "^2.7.3"
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.2",
+    "uglify-js": "^2.7.3",
+    "webpack": "^3.11.0",
+    "webpack-merge": "^4.1.1"
   }
 }

@@ -10,8 +10,8 @@ We need to write "typeis.js" due to a problem (type check) arised other than exc
 |Value                  |Native     |Typeis.js  |
 |---                    |---        |---        |
 |Undeclared variables   |undefined  |---        |
-|undefined              |undefined  |---        |
-|null                   |object     |---        |
+|undefined              |undefined  |Undefined  |
+|null                   |object     |Null       |
 |Booleans               |boolean    |Boolean    |
 |Numbers                |number     |Number     |
 |String                 |string     |String     |
@@ -20,10 +20,6 @@ We need to write "typeis.js" due to a problem (type check) arised other than exc
 |Object                 |object     |Object     |
 |Date                   |object     |Date       |
 |RegExp                 |object     |RegExp     |
-
-#### Be careful!
-Everything in JavaScript acts like an object, with the only two exceptions being **null** and **undefined**. *[JavaScript Garden](https://bonsaiden.github.io/JavaScript-Garden/#object.general)
-Typeis.js acts like an property; doesn't work null and undefined types because they doesn't have properties.
 
 ### Download
 
@@ -46,15 +42,13 @@ In a browser:
 ```
 #### Examples
 
-<aside class="notice">
-Property usage will not available after ^2.0 anymore, please use function typeis(variable, [type])
-Basic type checking
-</aside>
-
-
 ```javascript
-variable.typeis();
+typeis(variable);
 // return Array, Object, RegExp, Date etc.
+
+// OR
+
+new Typeis(variable).get()
 ```
 Multi type validation
 ```javascript
@@ -89,6 +83,10 @@ function realWorld( options ){
 IE9 and below also support all modern browser.
 
 #### Changelog
+
+### 2.0.0-alpha
+rewrite library with typescript
+removed property usage
 
 ##### 1.1.2
 Property usage warning
