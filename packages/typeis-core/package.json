@@ -1,0 +1,41 @@
+{
+  "name": "@typeis/core",
+  "version": "2.0.0-alpha.0",
+  "description": "Typeis core",
+  "main": "dist/typeis.core.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "prepare": "npm run build",
+    "build": "rollup -c",
+    "watch": "rollup -w"
+  },
+  "author": "Salih sağdilek <salihsagdilek@gmail.com>",
+  "homepage": "https://typeis.github.io",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typeis/typeisjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typeis/typeisjs/issues"
+  },
+  "keywords": [
+    "typeis",
+    "type is",
+    "type check",
+    "type checker",
+    "javascript type checker",
+    "type validation",
+    "smart type check",
+    "typeof",
+    "type of"
+  ],
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "rollup": "^0.56.2",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-uglify": "^3.0.0"
+  }
+}

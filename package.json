@@ -2,11 +2,6 @@
   "name": "typeis",
   "version": "2.0.0-alpha",
   "description": "Typeis. it's the smart and simple javascript type check and validation library",
-  "main": "dist/typeis.js",
-  "scripts": {
-    "build": "webpack --config build/webpack.prod.js",
-    "watch": "webpack --watch --config build/webpack.dev.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/typeis/typeisjs.git"
@@ -29,11 +24,9 @@
   },
   "homepage": "https://typeis.github.io",
   "devDependencies": {
-    "friendly-errors-webpack-plugin": "^1.6.1",
-    "ts-loader": "^3.5.0",
-    "typescript": "^2.7.2",
-    "uglify-js": "^2.7.3",
-    "webpack": "^3.11.0",
-    "webpack-merge": "^4.1.1"
-  }
+    "lerna": "^2.9.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

@@ -1,14 +1,9 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "./dist",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
-    "allowJs": false,
+    "baseUrl": "./packages",
     "paths": {
-      "@": ["src"]
+      "@quramy/*": ["./*/src"]
     }
   }
 }
