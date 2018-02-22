@@ -1,0 +1,22 @@
+{
+  "name": "@typeis/url",
+  "version": "2.0.0-alpha.0",
+  "description": "Typeis url validation plugin",
+  "main": "src/index.ts",
+  "author": "Salih sağdilek <salihsagdilek@gmail.com>",
+  "homepage": "https://babeljs.io/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typeis/typeisjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typeis/typeisjs/issues"
+  },
+  "keywords": [
+    "typeis",
+    "javascript url checker",
+    "url validation",
+    "url control"
+  ]
+}

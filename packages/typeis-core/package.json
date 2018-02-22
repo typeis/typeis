@@ -1,0 +1,27 @@
+{
+  "name": "@typeis/core",
+  "version": "2.0.0-alpha.0",
+  "description": "Typeis core",
+  "main": "src/index.ts",
+  "author": "Salih sağdilek <salihsagdilek@gmail.com>",
+  "homepage": "https://babeljs.io/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typeis/typeisjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typeis/typeisjs/issues"
+  },
+  "keywords": [
+    "typeis",
+    "type is",
+    "type check",
+    "type checker",
+    "javascript type checker",
+    "type validation",
+    "smart type check",
+    "typeof",
+    "type of"
+  ]
+}
