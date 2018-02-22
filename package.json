@@ -1,10 +1,22 @@
 {
   "name": "typeis",
-  "version": "2.0.0-alpha",
+  "version": "2.0.0-alpha.0",
   "description": "Typeis. it's the smart and simple javascript type check and validation library",
+  "main": "dist/typeis.bundle.js",
+  "scripts": {
+    "prebuild": "rimraf dist/*",
+    "prepare": "npm run build",
+    "build": "node build"
+  },
+  "author": "Salih sağdilek <salihsagdilek@gmail.com>",
+  "homepage": "https://typeis.github.io",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/typeis/typeisjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typeis/typeisjs/issues"
   },
   "keywords": [
     "typeis",
@@ -17,14 +29,10 @@
     "typeof",
     "type of"
   ],
-  "author": "salihsagdilek",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/typeis/typeisjs/issues"
-  },
-  "homepage": "https://typeis.github.io",
   "devDependencies": {
-    "lerna": "^2.9.0"
+    "lerna": "^2.9.0",
+    "rimraf": "^2.6.2",
+    "uglify-js": "^3.3.12"
   },
   "workspaces": [
     "packages/*"
