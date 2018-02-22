@@ -1,4 +1,4 @@
-export class Typeis {
+class Typeis {
     private value: any;
 
     constructor(value: any) {
@@ -9,19 +9,22 @@ export class Typeis {
         if (Array.isArray(type)) {
             type = type.join('|')
         }
-        return new RegExp('^(' + type.toString() + ')$', 'i').test(this.get())
+        return new RegExp(`^(${type})$`, 'i').test(this.get())
     }
 
     get(): string {
-        return this.controller(this.value)
+        return this.type(this.value)
     }
 
-    private controller(value: any): string {
+    type(value: any): string {
         return Object.prototype.toString.call(value).replace(/^\[object |]$/gi, '')
     }
+
+    static register(name: string, func: () => any) {
+        if (typeof func === 'function' && !Typeis.prototype.hasOwnProperty(name)) {
+            (Typeis.prototype as any)[name] = func
+        }
+    }
 }
 
-export function typeis(value: any, type?: string) {
-    let typeis = new Typeis(value);
-    return type ? typeis.check(type) : typeis.get()
-}
+export default Typeis

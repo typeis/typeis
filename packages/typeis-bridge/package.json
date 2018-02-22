@@ -1,8 +1,8 @@
 {
-  "name": "@typeis/core",
+  "name": "@typeis/bridge",
   "version": "2.0.0-alpha.0",
-  "description": "Typeis core",
-  "main": "dist/typeis.core.js",
+  "description": "Typeis shorthand bridge",
+  "main": "dist/typeis.bridge.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "prepare": "npm run build",
@@ -21,14 +21,8 @@
   },
   "keywords": [
     "typeis",
-    "type is",
-    "type check",
-    "type checker",
-    "javascript type checker",
-    "type validation",
-    "smart type check",
-    "typeof",
-    "type of"
+    "typis bridge",
+    "typis shorthand"
   ],
   "devDependencies": {
     "rimraf": "^2.6.2",
