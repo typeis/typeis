@@ -26,11 +26,108 @@ We need to write "typeis.js" due to a problem (type check) arised other than exc
 * [typeis.js ~813 B (413 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/typeis.js)
 * [typeis.min.js ~305 B (226 B gzipped)](https://raw.githubusercontent.com/typeis/typeisjs/master/dist/typeis.min.js)
 
-### Installation
+### Installation bundle
 ```javascript
 npm install typeis
 bower install typeis
 ```
+
+## Modules
+|Name      |Package name       |Description           |Size (Normal/Gzip)
+|---       |---                |---                   |---              |
+|Bundle    |typeis             |Includes all modules  | ~1,699 bytes / ~671 bytes |
+|Core      |@typeis/core       |Core module           | ~651 bytes / ~363 bytes   |
+|Bridge    |@typeis/bridge     |Shorthand module      | ~293 bytes / ~197 bytes   |
+|Url       |@typeis/url        |Url Validator         | ~888 bytes / ~471 bytes   |
+
+
+#### Core
+Typeis core module.
+
+```javascript
+npm install @typeis/core --save
+```
+
+In Node.js:
+```javascript
+require('@typeis/core');
+```
+In a browser:
+```html
+<script src="typeis.core.js"></script>
+```
+
+Example
+```javascript
+let variable = ['X', 'Y'] // dummy
+
+let movies = new Typeis(variable)
+
+movies.get() //return Array
+
+movies.check('array') // return true
+
+movies.check('object') // return false
+
+```
+
+Multi type validation
+```javascript
+
+let variable = {fckin: 'aweome'} // dummy
+let options = new Typeis(variable)
+
+options.check(['number', 'string', 'array']) // return false
+
+options.check(['object', 'array']) // return true
+
+```
+
+Validation with regex
+```javascript
+let variable = {fckin: 'aweome'} // dummy
+let options = new Typeis(variable)
+
+options.check('array|number|string') // return false
+
+options.check('array|object') // return true
+
+// if variable type end of "y", "e" and "p" like Array, Date, RegExp return true otherwise false
+options.check('.+[yep]$') // return false
+
+// if variable is Array, Object or ending "n" like Function and Boolean return false otherwise true
+options.check('(^(?!array|object).+)[^n]$') // return false
+
+```
+
+#### Real world Usage
+
+```javascript 
+function realWorld (options) {
+  let isMultiple = new Typeis(options)
+  if (isMultiple.check('array|object')) {
+    //do something
+  } else {
+    //do another something
+  }
+}
+```
+
+#### Bridge
+
+```javascript
+npm install @typeis/bridge
+```
+
+
+#### Url
+
+```javascript
+npm install @typeis/url
+```
+
+
+
 ### Usage
 In Node.js:
 ```javascript
@@ -40,47 +137,8 @@ In a browser:
 ```html
 <script src="typeis.js"></script>
 ```
-#### Examples
 
-```javascript
-typeis(variable);
-// return Array, Object, RegExp, Date etc.
 
-// OR
-
-new Typeis(variable).get()
-```
-Multi type validation
-```javascript
-typeis(variable, ['array', 'object']);
-// if variable is Array or Object return true otherwise false
-```
-Type valition with regex
-```javascript
-typeis(variable, 'array|object');
-// if variable is Array or object return true otherwise false
-
-typeis(variable, '.+[yep]$');
-// if variable type end of "y", "e" and "p" like Array, Date, RegExp return true otherwise false
-
-typeis(variable, '(^(?!array|object).+)[^n]$');
-// if variable is Array, Object or ending "n" like Function and Boolean return false otherwise true
-```
-
-#### Real world Usage
-
-```javascript 
-function realWorld( options ){
-    if(typeis(options, 'object')){
-        //do something
-    } else {
-        //do another something
-    }
-}
-```
-
-#### Browser Support
-IE9 and below also support all modern browser.
 
 #### Changelog
 
