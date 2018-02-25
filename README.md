@@ -120,6 +120,36 @@ npm install @typeis/bridge
 ```
 
 
+In Node.js:
+```javascript
+require('@typeis/bridge');
+```
+In a browser:
+```html
+<script src="typeis.bridge.js"></script>
+```
+
+Example
+```javascript
+let variable = ['X', 'Y'] // dummy
+
+typeis(variable) //return Array
+
+typeis(variable, 'array') //return true
+```
+##### Also you can use multip type validation and regex validation
+
+```javascript
+let variable = ['X', 'Y'] // dummy
+
+typeis(variable, ['array', 'object']) // return true
+
+typeis(variable, '.+[yep]$') //return true
+
+typeis(variable, '(^(?!array|object).+)[^n]$') // return false
+```
+
+
 #### Url
 
 ```javascript
