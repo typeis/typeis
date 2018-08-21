@@ -1,6 +1,6 @@
 {
   "name": "@typeis/core",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0-alpha.2",
   "description": "Typeis core",
   "main": "dist/typeis.core.js",
   "scripts": {
