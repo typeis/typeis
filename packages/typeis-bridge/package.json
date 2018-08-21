@@ -1,6 +1,6 @@
 {
   "name": "@typeis/bridge",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0-alpha.2",
   "description": "Typeis shorthand bridge",
   "main": "dist/typeis.bridge.js",
   "scripts": {
