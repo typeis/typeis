@@ -1,6 +1,6 @@
 {
   "name": "typeis",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0-alpha.1",
   "description": "Typeis. it's the smart and simple javascript type check and validation library",
   "main": "dist/typeis.bundle.js",
   "scripts": {
