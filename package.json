@@ -28,6 +28,6 @@
   },
   "homepage": "https://typeis.github.io",
   "devDependencies": {
-    "uglify-js": "^2.7.3"
+    "uglify-js": "^3.11.3"
   }
 }
